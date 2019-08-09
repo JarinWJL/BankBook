@@ -1,12 +1,12 @@
 <!--pages/booklist/dingzhi/dingzhi.wxml-->
 <view class="container" style="height:90vh">
   <text style='font-weight:bold; font-size:40rpx '>你喜欢什么类型的书</text>
-  <view class='bookContainer' style="display: flex; flex-direction:column">
-      <button  class='book-item'>考研</button >
-      <button  class='book-item'>名著</button >
-      <button  class='book-item'>历史</button >
-      <button  class='book-item'>言情</button >
-      <button  class='book-item'>小说</button >
+  <view class='bookContainer' style="display: flex; flex-direction:column  align-items: flex-start;">
+      <view  class='book-item'>考研</view >
+      <view  class='book-item'>名著</view >
+      <view  class='book-item'>历史</view >
+      <view  class='book-item'>言情</view >
+      <view  class='book-item'>小说</view >
   </view>
   <text class="shudan">更多</text>
   <navigator class="shudan">下一步</navigator>

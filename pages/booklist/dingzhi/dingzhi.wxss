@@ -1,15 +1,16 @@
 /* pages/booklist/dingzhi/dingzhi.wxss */
 .book-item{
-  width:150rpx;
-  height: 150rpx;
+  width:120rpx;
+  height: 120rpx;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-
-   position:relative;    /*启用相对定位*/
-    left:0;    /*相对于自己往右偏离150*/
+  background-color: rgba(230, 29, 196, 0.993);
+   
+  text-align:center;
+  position:relative;    /*启用相对定位*/
+  left:0;    /*相对于自己往右偏离150*/
 }
 
 .shudan
