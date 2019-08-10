@@ -1,1 +1,36 @@
-/* pages/socialarea/socialarea.wxss */
+/**index.wxss**/
+/*!
+ * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
+ * Copyright 2017 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+ 
+
+.about-banner{
+  width:600rpx;
+  height: 300rpx;
+  border-radius: 50%
+}
+
+navigator{
+  color:coral
+}
+
+
+ .swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #777777;  
+    text-align: center;  
+    line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 33.33%;  
+    color: #777777;  
+}  
+.on{ color: #da7c0c;  
+    border-bottom: 5rpx solid #da7c0c;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{  
+    text-align: center;  
+}  
