@@ -1,0 +1,67 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx0279e49bc6504436",
+	"projectname": "miniprogram-test",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "朋友在读",
+					"pathName": "pages/booklist/friend/friend",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "朋友在读",
+					"pathName": "pages/booklist/dingzhi/dingzhi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "性别定制",
+					"pathName": "pages/booklist/dingzhi/FirstDz/FirstDz",
+					"scene": null
+				}
+			]
+		}
+	}
+}

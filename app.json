@@ -4,7 +4,12 @@
     "pages/socialarea/socialarea",
     "pages/ident/ident",
     "pages/ident/identified/identified",
-    "pages/myself/myself"
+    "pages/myself/myself",
+    "pages/booklist/friend/friend",
+    "pages/booklist/tuijian/tuijian",
+    "pages/booklist/guanlian/guanlian",
+    "pages/booklist/dingzhi/dingzhi",
+    "pages/booklist/dingzhi/FirstDz/FirstDz"
   ],
   "tabBar": {
     "list": [
@@ -26,12 +31,12 @@
         "iconPath": "images/shequ.png",
         "selectedIconPath": "images/shequ-selected.png"
       },
-          {
-            "pagePath": "pages/myself/myself",
-            "text": "我的",
-            "iconPath": "images/me.png",
-            "selectedIconPath": "images/me-selected.png"
-          }
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-selected.png"
+      }
     ]
   },
   "window": {
