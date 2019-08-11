@@ -1,0 +1,195 @@
+<view class="swiper-tab">
+
+  <view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+    <image class="icon" src='../../images/dt.png'> </image>
+    <view>动态</view>
+  </view>
+  <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+    <image class="icon" src='../../images/qz.png'> </image>
+    <view>群组计划</view>
+  </view>
+  <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+    <image class="icon" src='../../images/gd.png'> </image>
+    <view>共读</view>
+  </view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{clientHeight?clientHeight-'40'+'px':'auto'}}" bindchange="bindChange">
+
+  <swiper-item>
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+
+      <view class='flex'>
+        <view class='flex-item'>
+          <view class='setting' bindtap='jumpLogin'>
+            <image class='btnImg' src='/images/123.jpg' style="width:40rpx;height:40rpx;"></image>
+            <text style="font-size:0.9rem;color:gray;">会飞的鱼</text>
+            <text style="font-size:0.6rem;color:gray;">2019-8-11</text>
+          </view>
+          <navigator></navigator>
+          <text style="font-size:0.8rem;color:#0AAAF6">发表了《无声告白》书评</text>
+          <navigator></navigator>
+
+          <view class='btnImg3'>
+            <text class='btnImg5' style="font-size:0.8rem;">昨晚到现在读完了武绮诗的《无声告白》。詹姆斯作为生活在美国的中国人，永远在意别人的眼光，永远在意自己那格格不入的肤色；母亲玛丽琳则把自己未完成的梦想全部寄托在二女儿莉迪亚身上,他们过于重视莉迪亚</text>
+            <image  src="/images/wsgb.png" mode="widthFix" ></image>
+          </view>
+          <navigator></navigator>
+        </view>
+      </view>
+
+ <view class='btnImg33'>
+      <text style="font-size:0.8rem;color:gray;">  5  </text>
+      <image  class='btnImg4' src="/images/commit.png" mode='widthFix' ></image>
+      <text style="font-size:0.8rem;color:gray;">  2  </text>
+      <image class='btnImg4'  src="/images/zhuan.png" mode='widthFix' ></image>
+      <text style="font-size:0.8rem;color:gray;">8</text>
+      <image  class='btnImg4' src="/images/点赞.png" mode='widthFix' ></image>
+    </view>
+
+
+
+
+<view><navigator></navigator></view>
+<view><navigator></navigator></view>
+
+     <view class='flex'>
+        <view class='flex-item'>
+          <view class='setting' bindtap='jumpLogin'>
+            <image class='btnImg' src='/images/321.jpg' style="width:40rpx;height:40rpx;"></image>
+            <text style="font-size:0.9rem;color:gray;">冷冷</text>
+            <text style="font-size:0.6rem;color:gray;">2019-8-8</text>
+          </view>
+          <navigator></navigator>
+          <text style="font-size:0.8rem;color:#0AAAF6">发表了《城南旧事》书评</text>
+          <navigator></navigator>
+
+          <view class='btnImg3'>
+            <text  class='btnImg5' style="font-size:0.8rem;">作者林英子住在北京城南的胡同里，朋友秀贞没了女儿，英子帮他找到后就迁居了。……                       作者以自己的童年为背景，写出了这本《城南旧事》。《城南旧事》这本书以孩子的角度诉说大人们的争议，谈话，生活，工作，爱情。而《城南旧事》里的人物。。</text>
+            <image  src="/images/dierben.png" mode='widthFix' ></image>
+          </view>
+          <navigator></navigator>
+        </view>
+      </view>
+
+
+ <view class='btnImg33'>
+      <text style="font-size:0.8rem;color:gray;">  5  </text>
+      <image  class='btnImg4' src="/images/commit.png" mode='widthFix' ></image>
+      <text style="font-size:0.8rem;color:gray;">  2  </text>
+      <image class='btnImg4'  src="/images/zhuan.png" mode='widthFix' ></image>
+      <text style="font-size:0.8rem;color:gray;">  2  </text>
+      <image class='btnImg4'  src="/images/点赞.png" mode='widthFix' ></image>
+    </view>
+
+
+      <view class='flex'>
+        <view class='flex-item'>
+          <view class='setting' bindtap='jumpLogin'>
+            <image class='btnImg' src='/images/wsgb.png' style="width:40rpx;height:40rpx;"></image>
+            <text style="font-size:0.9rem;color:gray;">马飞飞</text>
+            <text style="font-size:0.6rem;color:gray;">2019-8-6</text>
+          </view>
+          <navigator></navigator>
+          <text style="font-size:0.8rem;color:#0AAAF6">发表了《鲨权力》书评</text>
+          <navigator></navigator>
+
+          <view class='btnImg3'>
+            <text  class='btnImg5' style="font-size:0.8rem;">向鲨鱼学习统治海洋的直觉领导力。鲨鱼有着极强的适应能力，已存活了四亿两千多万年。作者从鲨鱼这个独特的视角给管理者以启迪，将在鲨鱼帝国中的生存体验和现今的日常管理问题结合在一起，带领读者进入了一段史无前例、引人入胜的旅程。</text>
+            <image  src="/images/shu3.png" mode='widthFix' ></image>
+          </view>
+          <navigator></navigator>
+        </view>
+      </view>
+
+    </scroll-view>
+  </swiper-item>
+
+
+  <swiper-item>
+    <view class="page">
+      <view class="nav-son" bindtap="listpx">
+        <text style='font-size:0.8rem;'>添加好友</text>
+        <image src='{{imgUrl}}'></image>
+      </view>
+
+      <view class="temp {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+        <view wx:for="{{content}}">
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <!-- 我的好友 -->
+    <!-- 提交评论显示 -->
+    <i-cell-group>
+   <i-cell title="我的群组"  is-link url="../plan/plan"></i-cell>
+    <i-cell title="我的好友" is-link url="plan/index/index"></i-cell>
+    <i-cell title="我的读书计划" is-link url="store/store"></i-cell>
+
+
+
+
+
+
+
+
+    
+</i-cell-group>
+
+
+  </swiper-item>
+
+
+  <swiper-item>
+    <view class='setting' bindtap='jumpLogin'>
+      <image class='btnImg' src='/images/wsgb.png' style="width:40rpx;height:40rpx;"></image>
+      <text style="font-size:0.8rem;color:#0AAAF6">切换账号</text>
+    </view>
+
+  </swiper-item>
+
+
+
+</swiper>
+
+
+<view class="message">
+  <form bindsubmit="formSubmit" class='form'>
+    <input type="text" name="liuyantext" placeholder='留下你精彩的评论吧' value='{{keyValue}}' class="input-style" />
+    <button formType="submit" class="btn">发送</button>
+    <input type="text" name="nickname" value='{{videoid}}' style="display:none;" />
+    <input type="text" name="headimg" value='{{avatarUrl}}' style="display:none;" />
+  </form>
+</view>
+<view class='allMessage'>
+   <view class="title">
+    <text>全部评论</text>
+  </view>
+  <view class='tab-content'>
+    <view class='comment-list'>
+      <!-- 提交评论显示 -->
+      <view class='comment-item' class="{{showOrHidden?'show':'hide'}}" style='width: 100%;height: auto;overflow: hidden;padding: 16px 0;border-bottom: 1px solid #f3f3f5;'>
+        <view class='comment-person'>
+          <image class='comment-person-avatar' src='{{photo2}}'></image>
+          <view class='comment-person-info ellipsis'>
+            <view class='comment-person-name ellipsis'>{{nickname2}}</view>
+            <view class='comment-time ellipsis'>{{date2}}</view>
+          </view>
+        </view>
+        <view class='comment-text'>{{comment2}}</view>
+      </view>
+
+
+      <!-- 读取数据显示全部评论 -->
+      <view class='comment-item' wx:for="{{comment}}" wx:key="{{item.id}}">
+        <view class='comment-person'>
+          <image class='comment-person-avatar' src='{{item.photo}}'></image>
+          <view class='comment-person-info ellipsis'>
+            <view class='comment-person-name ellipsis'>{{item.nickname}}</view>
+            <view class='comment-time ellipsis'>{{item.created_at}}</view>
+          </view>
+        </view>
+        <view class='comment-text'>{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+</view>
