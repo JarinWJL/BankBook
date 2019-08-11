@@ -4,6 +4,9 @@
     "pages/socialarea/socialarea",
     "pages/ident/ident",
     "pages/ident/identified/identified",
+    "pages/ident/from/from",
+    "pages/ident/enter/enter",
+    "pages/ident/more/more",
     "pages/myself/myself"
   ],
   "tabBar": {
