@@ -92,3 +92,33 @@
   margin-bottom: -20rpx;/*底部留空，负数是为了调整图标和文字的上下关系*/
   
 }
+
+.renzhengbutton{
+  
+  background-color: rgb(163, 134, 134);/*文字背景颜色*/
+  color: white;/*文字颜色*/
+  border-radius: 8px;/*边角弧度*/
+  
+  width: 700rpx;
+  text-align: center;/*文字居中*/
+  
+
+}
+.item4{
+        height: 30rpx; 
+        
+        display: flex;
+  
+  align-items: center;/*居中*/
+  justify-content: center;
+  margin-bottom: 30rpx;/*顶部留空*/     
+
+    }    
+.biaoti2{
+  width: 100%;
+  display: flex;
+  
+  align-items: center;/*居中*/
+  justify-content: center;
+  
+}

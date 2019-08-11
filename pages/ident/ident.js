@@ -68,5 +68,20 @@ Page({
     wx.navigateTo({
       url: 'identified/identified',
     })
-  }
+  },
+  f1: function (e) {
+    wx.navigateTo({
+      url: 'from/from',
+    })
+  },
+  f2: function (e) {
+    wx.navigateTo({
+      url: 'enter/enter',
+    })
+  },
+  f3: function (e) {
+    wx.navigateTo({
+      url: 'more/more',
+    })
+  },
 })
