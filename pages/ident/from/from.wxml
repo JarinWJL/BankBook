@@ -1,0 +1,74 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">是否公开信息</view>
+    <switch name="isPub" />
+  </view>
+ 
+  <view class="section">
+    <view class="section__title">手机号</view>
+    <input name="phone" placeholder="请输入手机号" />
+  </view>
+  <view class="section">
+    <view class="section__title">姓名</view>
+    <input name="name" placeholder="请输入姓名" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">性别</view>
+    <radio-group name="sex">
+      <label>
+        <radio value="男" checked/>男</label>
+      <label>
+        <radio value="女" />女</label>
+    </radio-group>
+  </view>
+  <view class="section2">
+    <view class="section__title">1.  如果你的毕业论文需要查重复率，可以通过什么服务？（ ） </view>
+    <radio-group class="section2" name="t1">
+      <label>
+        <radio value="A" />论文检测</label>
+      <label>
+        <radio value="B" />文献传递</label>
+        <label>
+        <radio value="C" />查收查引</label>
+      <label>
+        <radio value="D" />科技查新</label>
+    </radio-group>
+  </view>
+  
+  <view class="section2">
+    <view class="section__title">2.  图书馆数据库里，收录了各种畅销报刊杂志的是下列哪一个数据库？（ ） </view>
+    <radio-group class="section2" name="t2">
+      <label>
+        <radio value="A" />博看网</label>
+      <label>
+        <radio value="B" />大成故纸堆</label>
+        <label>
+        <radio value="C" />龙源电子阅读平台</label>
+      <label>
+        <radio value="D" />读览天下期刊库</label>
+    </radio-group>
+  </view>
+
+  <view class="section2">
+    <view class="section__title">3.  要考英语四六级了，想到网上去做一些模拟试题，请问下列哪个数据库可以实现这一功能？（ ） </view>
+    <radio-group class="section2" name="t2">
+      <label>
+        <radio value="A" />环球英语多媒体资源库</label>
+      <label>
+        <radio value="B" />新东方多媒体学习库</label>
+        <label>
+        <radio value="C" />读秀学术搜索</label>
+      <label>
+        <radio value="D" />起点考试网</label>
+    </radio-group>
+  </view>
+  
+  
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>
+<view wx:if="{{isSubmit}}">
+  {{warn ? warn : "是否公开信息："+isPub+"，手机号："+phone+"，密码："+pwd+"，性别："+sex}}
+</view>
