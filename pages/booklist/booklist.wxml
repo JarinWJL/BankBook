@@ -2,7 +2,7 @@
 <view class="">
 
   <!--设置背景-->
-  <image class='background' src="" mode="aspectFill"></image>
+  <image class='background' src="../../images/background.png" mode="aspectFill"></image>
   <!--index.wxml-->
   <view class="topBg">
     <!--搜索-->
@@ -13,20 +13,20 @@
     </view>
 
     <view class="menuList">
-      <view class="menu"  style="background-image: url('../../images/menu.png')">
+      <view class="menu" style="background-image: url('http://a1.qpic.cn/psb?/V13YAAEQ0phzZz/Zmi9Klu0zgrzVp9vlmYs9F1IPVLY8G61dslsjzqNYpY!/b/dJgAAAAAAAAA&ek=1&kp=1&pt=0&bo=3wNpAN8DaQADEDU!&tl=1&vuin=1739126395&tm=1565485200&sce=60-1-1&rf=0-0')">
         <navigator class="shudan" url="./dingzhi/FirstDz/FirstDz">定制书单</navigator>
       </view>
 
-      <view class="menu" style="background-image: url('../../images/menu.png')">
+      <view class="menu" style="background-image: url('http://a1.qpic.cn/psb?/V13YAAEQ0phzZz/Zmi9Klu0zgrzVp9vlmYs9F1IPVLY8G61dslsjzqNYpY!/b/dJgAAAAAAAAA&ek=1&kp=1&pt=0&bo=3wNpAN8DaQADEDU!&tl=1&vuin=1739126395&tm=1565485200&sce=60-1-1&rf=0-0')">
         <navigator class='shudan' url="./friend/friend">朋友在读</navigator>
       </view>
 
-      <view class="menu" style="background-image: url('../../images/menu.png')">
+      <view class="menu" style="background-image: url('http://a1.qpic.cn/psb?/V13YAAEQ0phzZz/Zmi9Klu0zgrzVp9vlmYs9F1IPVLY8G61dslsjzqNYpY!/b/dJgAAAAAAAAA&ek=1&kp=1&pt=0&bo=3wNpAN8DaQADEDU!&tl=1&vuin=1739126395&tm=1565485200&sce=60-1-1&rf=0-0')">
         <navigator class='shudan' url="./tuijian/tuijian">推荐书单</navigator>
       </view>
 
-      <view class="menu" style="background-image: url('../../images/menu.png')">
-        <navigator class='shudan'  url="./guanlian/guanlian">关联书单</navigator>
+      <view class="menu" style="background-image: url('http://a1.qpic.cn/psb?/V13YAAEQ0phzZz/Zmi9Klu0zgrzVp9vlmYs9F1IPVLY8G61dslsjzqNYpY!/b/dJgAAAAAAAAA&ek=1&kp=1&pt=0&bo=3wNpAN8DaQADEDU!&tl=1&vuin=1739126395&tm=1565485200&sce=60-1-1&rf=0-0')">
+        <navigator class='shudan' url="./guanlian/guanlian">关联书单</navigator>
       </view>
     </view>
   </view>
@@ -39,10 +39,10 @@
         <image src="../../images/swiper.png"></image>
       </swiper-item>
       <swiper-item>
-        <image src="../../images/swiper.png"></image>
+        <image src="../../images/swiper2.jpg"></image>
       </swiper-item>
       <swiper-item>
-        <image src="../../images/swiper.png"></image>
+        <image src="../../images/swiper3.jpg"></image>
       </swiper-item>
     </swiper>
   </view>
@@ -50,16 +50,22 @@
   <!--书目信息-->
   <view class="lm-title">我添加的书目</view>
   <view class="padding-content-flex">
-    <view class="book"></view>
+    <view class="book">
+      <image src="/images/ident/book8.jpg" style="width:210rpx; height:300rpx"></image>
+    </view>
     <view class="book"></view>
     <view class="book"></view>
   </view>
   <view class="lm-title">定制书单</view>
   <view class="padding-content-flex">
-    <view class="book"></view>
-    <view class="book"></view>
-    <view class="book"></view>
+    <view class="book">
+      <image src="/images/ident/book9.jpg" style="width:210rpx; height:300rpx"></image>
+    </view>
+    <view class="book">
+      <image src="/images/ident/book10.jpg" style="width:210rpx; height:300rpx"></image>
+    </view>
+    <view class="book">
+      <image src="/images/ident/book11.jpg" style="width:210rpx; height:300rpx"></image>
+    </view>
   </view>
-
-
 </view>

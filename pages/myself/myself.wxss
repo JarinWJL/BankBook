@@ -1,1 +1,12 @@
 /* pages/myself/myself.wxss */
+.about-banner{
+  width:250rpx;
+  height: 250rpx;
+  border-radius: 50%
+}
+
+.about-banner2{
+  width:100rpx;
+  height: 100rpx;
+  border-radius: 50%
+}
