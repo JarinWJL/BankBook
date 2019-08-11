@@ -1,0 +1,40 @@
+<view class="ident" >
+    <!--背景图-->
+    <image class='background' src="../../../images/background.png" mode="aspectFill"></image>
+    <!--页面其它部分-->
+    <view class="tushu">
+    <image src="/images/ident/book1.jpg"></image>
+    <text class="renzheng" >《鲨权力:直觉领导力修炼》</text>
+    </view>
+    <!--认证状态-->
+    <view class="yaoqiu"><text>认证状态：</text></view>
+    
+    <view class="item1">
+    <view class="status" ><image src="/images/ident/check.png"></image><text>笔记检测</text></view>
+    <view class="status" ><image src="/images/ident/dash.png"></image><text></text></view>
+    <view class="status" ><image src="/images/ident/info.png"></image><text>题库考评</text></view>
+    <view class="status" ><image src="/images/ident/dash.png"></image><text></text></view>
+    <view class="status" ><image src="/images/ident/info.png"></image><text>通话认证</text></view>
+
+    </view>
+
+     <!--认证要求-->
+    <view class="yaoqiu"><text>认证要求：</text></view>
+    <view class="divLine"></view>
+    <scroll-view scroll-y="true" style="height: 200px" class="item2">
+    <text decode="{{true}}" space="{{true}}">(1) 书本内容笔记检测
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们公司认为鼓励阅读不应只注重量化分数，因此开发了“阅读心得部落格” 功能，供读者发表评论以及分享阅读心得。为了提高讨论的方便性，每本书的阅 读界面均会附带一个悦读圈，用户读者须有 5 篇 100 字以上读书笔记或者观后感 发表在准备认证书目的悦读圈里，才可以发起答题认证，超过部分每 100 字 3 分， 总分 15 分，计入总成绩。
+
+(2) 书本题库在线考评
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该认证部分即可认证电子版阅读，又能认证纸质版阅读，当学生读完一本书 后，可以选择进行线上读书认证的申请，系统从学生发起认证的书目题库中抽取 部分题目，由读者在线答题，认证时，系统可以及时给予回馈，此模块中共包含 10 个客观题，题目难度逐渐加大，总分 35 分，计入总成绩。
+
+(3) 认证官语音通话认证 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;认证官语音通话认证是认证栏的核心模块。语音通话认证的过程：当前两项认证的总得分大于等于 35 分时，才可申请认证官语音通话认证。 语音通话认证的内容主要为与认证官在线通话交流讨论书内情节，并回答认证官 提出的与认证书目相关的问题，总分共计 50 分。</text>
+    </scroll-view>
+    <view class="divLine"></view>
+    <!--查看已认证书目-->
+    <view class="item4">
+    
+    <view class="biaoti2"><text class='renzhengbutton' bindtap="f1">书本题库在线考评</text></view>
+    </view>
+</view>
