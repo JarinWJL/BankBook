@@ -1,9 +1,29 @@
 <!--pages/booklist/friend/friend.wxml-->
 <view class='bookContainer'>
-      <image class='book-item' src="/images/ident/book2.jpg"></image>
-      <image class='book-item' src="/images/ident/book1.jpg"></image>
-      <image class='book-item' src="/images/ident/book3.jpg"></image>
-      <image class='book-item' src="/images/ident/book4.jpg"></image>
-      <image class='book-item' src="/images/ident/book5.jpg"></image>
-      <image class='book-item' src="/images/ident/book6.jpg"></image>
+    <!--背景图-->
+    <image class='background' src="../../images/bground.jpg" mode="aspectFill"></image>
+<view  class='book-item'>
+    <image class='image' src="/images/ident/book2.jpg"></image>
+    <view>《月亮和六便士》</view>
+</view>
+<view  class='book-item'>
+    <image class='image' src="/images/ident/book1.jpg"></image>
+    <view>《不必正常》</view>
+</view>
+<view  class='book-item'>
+    <image class='image' src="/images/ident/book3.jpg"></image>
+    <view>《长笛》</view>
+</view>
+<view  class='book-item'>
+    <image class='image' src="/images/ident/book4.jpg"></image>
+    <view>《假如真有时光机》</view>
+</view>
+<view  class='book-item'>
+    <image class='image' src="/images/ident/book5.jpg"></image>
+    <view>《无声告白》</view>
+</view>
+<view  class='book-item'>
+    <image class='image' src="/images/ident/book11.jpg"></image>
+    <view>《了不起的盖茨比》</view>
+</view>
 </view>

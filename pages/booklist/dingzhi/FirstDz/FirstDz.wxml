@@ -1,12 +1,16 @@
 <!--pages/booklist/dingzhi/FirstDz/FirstDz.wxml-->
-<view class="container" style="height:80vh">
-  <text style='font-weight:bold; font-size:40rpx '>您的性别?</text>
-  <text style='font-size:30rpx; margin:150rpx'>
+<view>
+  <!--背景图-->
+  <image class='background' src="/images/bground.jpg" mode="aspectFill"></image>
+  <view class="container" style="height:80vh">
+    <text style='font-weight:bold; font-size:40rpx '>您的性别?</text>
+    <text style='font-size:30rpx; margin:150rpx'>
     每位用户仅能获取一次书单，所填信息绝对保密，数据用于推荐书单
   </text>
-  <view style="display: flex;flex-direction: row;">
-   <image style="width:300rpx; height: 300rpx;"src="../../../../images/boy.png"></image>
-   <image style="width:300rpx; height: 300rpx;"src="../../../../images/girl.png"></image>
+    <view style="display: flex;flex-direction: row;">
+      <image style="width:300rpx; height: 300rpx;" src="../../../../images/boy.png"></image>
+      <image style="width:300rpx; height: 300rpx;" src="../../../../images/girl.png"></image>
+    </view>
+    <navigator class="shudan" url="../dingzhi">下一步</navigator>
   </view>
-  <navigator class="shudan" url="../dingzhi">下一步</navigator>
 </view>

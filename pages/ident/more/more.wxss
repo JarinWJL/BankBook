@@ -31,7 +31,7 @@
         display: flex;
   flex-direction: row; /*横向排列*/
 
-  margin-top: 100rpx;/*顶部留空*/     
+  margin-top: 30rpx;/*顶部留空*/     
 
     }
 
@@ -71,54 +71,5 @@
   border-radius: 8px;/*边角弧度*/
   width: 170rpx;
   text-align: center;/*文字居中*/
-  
-}
-.item3{
-         
-        height: 400rpx; 
-        display: flex;
-  flex-direction: column; 
-  margin: 0 50rpx;
-        
-    }
-.lianjie{
-  height: 33%;
-  
-}
-.lianjie image{
-  height: 70rpx;
-  width: 70rpx;
-  margin-right: 20rpx;/*右边留空*/
-  margin-bottom: -20rpx;/*底部留空，负数是为了调整图标和文字的上下关系*/
-  
-}
-
-.renzhengbutton{
-  
-  background-color: rgb(163, 134, 134);/*文字背景颜色*/
-  color: white;/*文字颜色*/
-  border-radius: 8px;/*边角弧度*/
-  
-  width: 700rpx;
-  text-align: center;/*文字居中*/
-  
-
-}
-.item4{
-        height: 30rpx; 
-        
-        display: flex;
-  
-  align-items: center;/*居中*/
-  justify-content: center;
-  margin-bottom: 30rpx;/*顶部留空*/     
-
-    }    
-.biaoti2{
-  width: 100%;
-  display: flex;
-  
-  align-items: center;/*居中*/
-  justify-content: center;
   
 }

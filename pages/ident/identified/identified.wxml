@@ -1,20 +1,20 @@
 <view class="ident" >
-    <!--背景图-->
-    <image class='background' src="../../../images/background.png" mode="aspectFill"></image>
+     <!--背景图-->
+    <image class='background' src="/images/bground.jpg" mode="aspectFill"></image>
     <!--页面其它部分-->
      
     <!--已读书目标题-->
     <view class="item1">
     <view class="biaoti"><text>已认证书单</text></view>
     <view class="biaoti"></view>
-    <view class="biaoti"><text class='more-button'>更多</text></view>
+    <view class="biaoti"></view>
     </view>
     <!--已读书目-->
     <view class="item2">
 
     <view class="renzheng">
     <view class="tushu">
-    <image src="/images/ident/book1.jpg"></image>
+    <image src="/images/ident/book4.jpg"></image>
     </view>
     <view class="huangguan">
     <image src="/images/ident/huangguan.png"></image>
@@ -23,7 +23,7 @@
 
     <view class="renzheng">
     <view class="tushu">
-    <image src="/images/ident/book2.jpg"></image>
+    <image src="/images/ident/book5.jpg"></image>
     </view>
     <view class="huangguan">
     <image src="/images/ident/huangguan.png"></image>
@@ -32,7 +32,7 @@
     
     <view class="renzheng">
     <view class="tushu">
-    <image src="/images/ident/book3.jpg"></image>
+    <image src="/images/ident/book6.jpg"></image>
     </view>
     <view class="huangguan">
     <image src="/images/ident/huangguan.png"></image>

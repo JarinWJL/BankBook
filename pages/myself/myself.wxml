@@ -1,21 +1,20 @@
 <!--pages/myself/myself.wxml-->
 <view class="container" style="height: 95vh;">
-<!--设置背景-->
-  <image class='background' src="../../images/background.png" mode="aspectFill"></image>
+    <!--背景图-->
+    <image class='background' src="/images/bground.jpg" mode="aspectFill"></image>
 <!--第一部分-->
   <view class = "container" style="width:650rpx; height:400rpx">
     <view class="myself">
         <image class="about_banner" src='../../images/user.jpg'></image>
         <text class="my_name" style='font-weight:bold; font-size:30rpx '>"一颗大萝卜"</text>
         <text  class="my_state" style='font-size:30rpx '>这个人很懒，什么都没有写...</text>
-        </view>
+    </view>
   </view>
 <!--第二部分-->
   <view  class = "content" style="flex-direction:row; width:650rpx; height:150rpx">
       <view class="store content_list">
         <image class="about_banner2" src='../../images/user/shop.png'></image>
         <text  class="content-name"> 商城</text>
-
       </view>
      <view class="sign content_list">
          <image class="about_banner2" src='../../images/user/qiandao.png'></image>
@@ -38,20 +37,23 @@
   <view class="my_info" style="width:650rpx; height:300rpx">
        <view class="my_achievement my_info_item">
            <image class="" src="../../images/honor.png" mode="widthFix" />
-             <text class="">我的成就</text>
-               
+             <text class="">我的成就</text>      
        </view>
+
        <view class="my_service my_info_item">
          <image class="" src="../../images/service.png"  mode="widthFix"/>
              <text class="">我的客服</text>
        </view>
+
        <view class="off_line my_info_item">
          <image class="line_img" src="../../images/off_line.png" mode="widthFix"/>
              <text class="">线下活动</text>
        </view>
+
        <view class="my_setting my_info_item">
          <image class="" src="../../images/setting.png" mode="widthFix" />
              <text class="">我的设置</text>
        </view>
+
   </view>
 </view>

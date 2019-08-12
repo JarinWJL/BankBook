@@ -6,8 +6,17 @@
     flex-wrap:wrap;
     justify-content:space-between;
 }
-.book-item {
+
+.bookContainer .book-item{
+ display: flex;
+ flex-direction:  column;
+}
+.book-item  .image{
     width: 350rpx;
     height: 500rpx;
     margin: 30rpx 10rpx
+}
+.book-item > view
+{
+   display: flex; justify-content: center;
 }

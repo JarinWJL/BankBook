@@ -1,8 +1,19 @@
 <!--pages/booklist/tuijian/tuijian.wxml-->
 <view class='bookContainer'>
-    <view class='book-item'>家庭亲子</view>
-    <view class='book-item'> 成功与励志</view>
-    <view class='book-item'>心理学</view>
-    <view class='book-item'>商业</view>
+  <view class='book-item'>
+    <image class='image' src="../../../images/blist/history.jpg"></image>
+    <view class="object">历史人文</view>
+  </view>
+  <view class='book-item'>
+    <image class='image' src="../../../images/blist/wenyi.jpg"></image>
+     <view  class="object">文学修养</view>
+  </view>
+  <view class='book-item'>
+    <image class='image' src="../../../images/blist/view.jpg"></image>
+    <view  class="object">视野拓展</view>
+  </view>
+  <view class='book-item'>
+    <image class='image' src="../../../images/blist/family.jpg"></image>
+    <view  class="object">亲子成长</view>
+  </view>
 </view>
-

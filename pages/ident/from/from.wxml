@@ -1,0 +1,62 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+     <!--背景图-->
+    <image class='background' src="/images/bground.jpg" mode="aspectFill"></image>
+    <view class="section__title">是否公开信息</view>
+    <switch name="isPub" />
+  </view>
+  <view class="section2">
+    <view class="section__title">1.  爱因斯坦提出相对论主要参考了哪个实验？（ ） </view>
+    <radio-group class="section2" name="t1">
+      <label>
+        <radio value="A" />迈克尔逊实验</label>
+      <label>
+        <radio value="B" />洛伦兹实验</label>
+        <label>
+        <radio value="C" />庞加莱实验</label>
+      <label>
+        <radio value="D" />牛顿力学实验</label>
+    </radio-group>
+  </view>
+  
+  <view class="section2">
+    <view class="section__title">2.  在什么样的情况下，光线在太阳附近会发生"1.7弧秒"的偏折得以验证？（ ） </view>
+    <radio-group class="section2" name="t2">
+      <label>
+        <radio value="A" />多位科学家亲子演算</label>
+      <label>
+        <radio value="B" />对某次日全食的观测</label>
+        <label>
+        <radio value="C" />普朗克为其测算的背书</label>
+      <label>
+        <radio value="D" />引力波的发现</label>
+    </radio-group>
+  </view>
+
+  <view class="section2">
+    <view class="section__title">3. 1914年爱因斯坦迁居至柏林的原因是什么【多选题】？（ ） </view>
+    <radio-group class="section2" name="t2">
+      <label>
+        <radio value="A" />与爱尔莎相聚</label>
+      <label>
+        <radio value="B" />与朋友更好地开展科研工作</label>
+        <label>
+        <radio value="C" />条件诱人的工作邀约</label>
+      <label>
+        <radio value="D" />回避对犹太人不够友好的地区</label>
+    </radio-group>
+  </view>
+  
+  
+  <view class="btn-area">
+    <button  bindtap="toastShow" formType="submit">提交</button>
+    <button formType="reset">重置</button>
+     <toast hidden="{{status}}" duration="3000" bindchange="toastHide">
+      提交成功，等待Bank·书巢审核，通过方可进入下一阶段！
+    </toast>
+  </view>
+   
+</form>
+<view wx:if="{{isSubmit}}">
+  {{warn ? warn : "是否公开信息："+isPub+"，手机号："+phone+"，密码："+pwd+"，性别："+sex}}
+</view>

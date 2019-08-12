@@ -1,52 +1,137 @@
-<!--顶部切换栏-->
 <view class="swiper-tab">
-  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" catchtap="swichNav">
-    <image class="icon" src='../../images/social/dt.png'  data-current="0"></image>
+  <!--背景图-->
+  <image class='background' src="/images/bground.jpg" mode="aspectFill"></image>
+  <!------------------------顶部导航栏---------------------->
+  <view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0">
+    <image class="icon" src='../../images/social/dt.png' catchtap="swichNav"> </image>
     <view>动态</view>
   </view>
-  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" catchtap="swichNav">
-    <image class="icon" src='../../images/social/qz.png' data-current="1" ></image>
+
+  <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1">
+    <image class="icon" src='../../images/social/gd.png' catchtap="swichNav"> </image>
+    <view>共读</view>
+  </view>
+
+  <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2">
+    <image class="icon" src='../../images/social/qz.png' catchtap="swichNav"> </image>
     <view>群组计划</view>
   </view>
-  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" catchtap="swichNav">
-    <image class="icon" src='../../images/social/gd.png' data-current="2" >  </image>
-    <view> 共读</view>
-  </view> 
 </view>
-
-
-<!-- 具体展开 -->
-
-<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 15}}px" bindchange="bindChange">
-  <!-------------------动态页--------------------- -->
+<!-----------------------具体分页栏---------------------->
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{clientHeight?clientHeight-'40'+'px':'auto'}}" bindchange="bindChange">
+  <!----------------------1、动态栏----------------------------------->
   <swiper-item>
-    <view>我是哈哈</view>
+    <scroll-view scroll-y="{{true}}" style="height: 900rpx">
+      <!---动态栏第一条动态---->
+      <view class='flex'>
+        <view class='flex-item'>
+          <view class='setting' bindtap='jumpLogin'>
+            <image class='btnImg' src='/images/social/123.jpg' style="width:40rpx;height:40rpx;"></image>
+            <text style="font-size:1.0rem;color:;">会飞的鱼</text>
+            <text style="font-size:0.8rem;color:;">2019-8-11</text>
+          </view>
+          <navigator></navigator>
+          <text style="font-size:0.8rem;color:#0AAAF6">发表了《无声告白》书评</text>
+          <navigator></navigator>
+
+          <view class='btnImg3'>
+            <text class='btnImg5' space="ensp" style="font-size:1.0rem; ">     昨晚到现在读完了武绮诗的《无声告白》。詹姆斯作为生活在美国的中国人，永远在意别人的眼光，永远在意自己那格格不入的肤色；母亲玛丽琳则把自己未完成的梦想全部寄托在二女儿莉迪亚身上,他们过于重视莉迪亚...</text>
+            <image src="/images/social/wsgb.png" mode="aspectFit"></image>
+          </view>
+          <navigator></navigator>
+        </view>
+      </view>
+      <!-- 点赞转发收藏 -->
+      <view class='btnImg33'>
+        <text style="font-size:0.8rem;color:gray;">  5  </text>
+        <image class='btnImg4' src="/images/social/commit.png" mode='widthFix'></image>
+        <text style="font-size:0.8rem;color:gray;">  2  </text>
+        <image class='btnImg4' src="/images/social/zhuan.png" mode='widthFix'></image>
+        <text style="font-size:0.8rem;color:gray;">8</text>
+        <image class='btnImg4' src="/images/social/zan.png" mode='widthFix'></image>
+      </view>
+
+
+      <!---动态栏第二条动态---->
+
+      <view class='flex'>
+        <view class='flex-item'>
+          <view class='setting' bindtap='jumpLogin'>
+            <image class='btnImg' src='/images/social/321.jpg' style="width:40rpx;height:40rpx;"></image>
+            <text style="font-size:1.0rem;color:;">冷冷</text>
+            <text style="font-size:0.8rem;color:;">2019-8-8</text>
+          </view>
+          <navigator></navigator>
+          <text style="font-size:0.8rem;color:#0AAAF6">发表了《城南旧事》书评</text>
+          <navigator></navigator>
+
+          <view class='btnImg3'>
+            <text class='btnImg5' space="ensp" style="font-size:1.0rem;">    作者林英子住在北京城南的胡同里，朋友秀贞没了女儿，英子帮他找到后就迁居了。……作者以自己的童年为背景，写出了这本《城南旧事》。《城南旧事》这本书以孩子的角度诉说大人们的争议，谈话，生活，工作，爱情。而《城南旧事》里的人物...</text>
+            <image src="/images/social/dierben.png" mode='aspectFit'></image>
+          </view>
+          <navigator></navigator>
+        </view>
+      </view>
+      <!-- 点赞转发收藏 -->
+      <view class='btnImg33'>
+        <text style="font-size:0.8rem;color:gray;">  5  </text>
+        <image class='btnImg4' src="/images/social/commit.png" mode='widthFix'></image>
+        <text style="font-size:0.8rem;color:gray;">  2  </text>
+        <image class='btnImg4' src="/images/social/zhuan.png" mode='widthFix'></image>
+        <text style="font-size:0.8rem;color:gray;">  2  </text>
+        <image class='btnImg4' src="/images/social/zan.png" mode='widthFix'></image>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+  <!-- 共读页面界面 -->
+  <swiper-item>
+    <view class='backpicture'>
+      <swiper class='movie-swiper' indicator-dots='{{true}}' previous-margin='50rpx' next-margin='50rpx' current='{{currentIndex}}'>
+        <swiper-item class='movie' wx:for="{{bookCommenlist}}">
+          <view class='container movie-card' data-movie-id='{{item.id}}'>
+            <image class='bool-image' src="{{item.image}}  "></image>
+            <text>主编推荐：{{item.detail}}</text>
+            <text>{{item.num}}</text>
+            <!--工具实现-->
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
   </swiper-item>
 
 
-
-  <!-------------------群组计划--------------------- -->
+  <!-- 群组计划界面 -->
   <swiper-item>
-    <view>我是呵呵</view>
+    <view class="page">
+      <view class="nav-son" bindtap="listpx">
+        <text style='font-size:0.8rem;'>添加好友</text>
+        <image src='{{imgUrl}}'></image>
+      </view>
+      <view class="temp {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+        <view wx:for="{{content}}">
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <!-- 我的好友 -->
+    <view>
+      <i-cell-group>
+        <i-cell title="我的群组" is-link url="../plan/plan"></i-cell>
+        <i-cell title="我的好友" is-link url="plan/index/index"></i-cell>
+        <i-cell title="我的读书计划" is-link url="store/store"></i-cell>
+      </i-cell-group>
+    </view>
   </swiper-item>
-
-
-  <!---------------------共读：在下方--------------------- -->
-    <swiper-item>
-    <view></view>
-    </swiper-item>
 </swiper>
 
-<!---------------------共读--------------------- -->
-<view class='backpicture' wx:if='{{currentTab == 2}}'>
-  <swiper class='movie-swiper' indicator-dots='{{true}}' previous-margin='50rpx' next-margin='50rpx' current='{{currentIndex}}'>
-    <swiper-item class='movie' wx:for="{{bookCommenlist}}">
-      <view class='container movie-card' data-movie-id='{{item.id}}'>
-        <image class='bool-image' src="{{item.image}}  "></image>
-        <text>主编推荐：{{item.detail}}</text>
-        <text>{{item.num}}</text>
-        <!--工具实现-->
-      </view>
-    </swiper-item>
-  </swiper>
+
+<!-----------------------提交书评------------------------------>
+<view class="message" wx:if='{{currentTab == 0}}'>
+  <form bindsubmit="formSubmit" class='form'>
+    <input type="text" name="liuyantext" placeholder='留下你精彩的书评吧' value='{{keyValue}}' class="input-style" />
+    <button formType="submit" class="btn">发送</button>
+    <input type="text" name="nickname" value='{{videoid}}' style="display:none;" />
+    <input type="text" name="headimg" value='{{avatarUrl}}' style="display:none;" />
+  </form>
 </view>

@@ -1,8 +1,7 @@
 /* pages/booklist/booklist.wxss */
 
 .search{
-  padding: 30rpx 0 20rpx 0;
-  
+  padding: 20rpx 0 15rpx 0;
 }
 .search  > view{
   display: flex;
@@ -20,7 +19,7 @@
 .menuList{
   display: flex;
   justify-content: space-between;
-  padding:0 20rpx;
+  padding:0 20rpx 5rpx;
 }
 .menuList .menu{
   padding-top: 50px;

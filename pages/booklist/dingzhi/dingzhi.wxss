@@ -1,4 +1,10 @@
 /* pages/booklist/dingzhi/dingzhi.wxss */
+
+.container >image{
+  width: 590rpx;
+  height: 660rpx;
+}
+
 .book-item{
   width:120rpx;
   height: 120rpx;
@@ -6,18 +12,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(230, 29, 196, 0.993);
-   
+  background-color: rgba(235, 156, 221, 0.993);
+  position:relative;  
   text-align:center;
-  position:relative;    /*启用相对定位*/
-  left:0;    /*相对于自己往右偏离150*/
 }
-
-.shudan
+.container .shudan
 {
 background-color: rgba(177, 165, 58, 0.993);
   color:rgb(255, 255, 255);
   border-radius: 8px;/*边角弧度*/
-  width: 170rpx;
+  width: 140rpx;
   text-align: center;/*文字居中*/
  }
+ .container >button{
+  background-color: rgba(177, 165, 58, 0.993);
+  color:rgb(255, 255, 255);
+  border-radius: 8px;/*边角弧度*/
+  text-align: center;/*文字居中*/
+  width: 230rpx;
+ }
+ .myStyle{
+    color:cyan;
+    text-align: center
+}

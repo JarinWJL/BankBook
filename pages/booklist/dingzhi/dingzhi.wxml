@@ -1,13 +1,17 @@
 <!--pages/booklist/dingzhi/dingzhi.wxml-->
-<view class="container" style="height:90vh">
-  <text style='font-weight:bold; font-size:40rpx '>你喜欢什么类型的书</text>
-  <view class='bookContainer' style="display: flex; flex-direction:column  align-items: flex-start;">
-      <view  class='book-item'>考研</view >
-      <view  class='book-item'>名著</view >
-      <view  class='book-item'>历史</view >
-      <view  class='book-item'>言情</view >
-      <view  class='book-item'>小说</view >
+<view>
+  <!--背景图-->
+  <image class='background' src="/images/bground.jpg" mode="aspectFill"></image>
+
+  <view class="container" style="height:90vh">
+    <text style='font-weight:bold; font-size:40rpx '>你喜欢什么类型的书</text>
+    <image src="/images/blist/type.png"></image>
+    <view class="shudan" style="font-size:40rpx">更多</view>
+    <button type="default" bindtap="toastShow">完成定制</button>
+    <toast hidden="{{status}}" duration="3000" bindchange="toastHide">
+      您的个人书单已经生成，请前往查看！
+    </toast>
+    <!--<view class="myStyle">这是status的值:{{status}}</view>-->
   </view>
-  <text class="shudan">更多</text>
-  <navigator class="shudan">下一步</navigator>
+
 </view>

@@ -2,30 +2,34 @@
 
 <view class="ident">
     <!--背景图-->
-    <image class='background' src="../../images/background.png" mode="aspectFill"></image>
+    <image class='background' src="/images/bground.jpg" mode="aspectFill"></image>
     <!--页面其它部分-->
      
     <!--已读书目标题-->
     <view class="item1">
     <view class="biaoti"><text>已读书目</text></view>
     <view class="biaoti"></view>
-    <view class="biaoti"><text class='more-button'>更多</text></view>
+    <view class="biaoti"><text class='more-button' bindtap="f3">更多</text></view>
     </view>
     <!--已读书目-->
     <view class="item2">
     <view class="tushu">
-    <image src="/images/ident/book1.jpg"></image>
-    <text class="renzheng" bindtap="f0">进入认证</text>
+    <image src="/images/ident/book12.jpg"></image>
+    <text class="renzheng" bindtap="f2">进入认证</text>
     </view>
     <view class="tushu">
     <image src="/images/ident/book2.jpg"></image>
-    <text class="renzheng" bindtap="f0">进入认证</text>
+    <text class="renzheng" bindtap="f2" >进入认证</text>
     </view>
     <view class="tushu">
     <image src="/images/ident/book3.jpg"></image>
-    <text class="renzheng" bindtap="f0">进入认证</text>
+    <text class="renzheng" bindtap="f2" >进入认证</text>
     </view>
     </view>
+
+    
+
+
     <!--功能跳转-->
     <view class="item3">
     <!--书本内容笔记检测-->
@@ -36,12 +40,17 @@
     <!--书本题库在线考评-->
     <view class="lianjie">
     <image src="/images/ident/test.png"></image>
-    <text>书本题库在线考评</text>
+    <text bindtap="f1">书本题库在线考评</text>
     </view>
     <!--认证官语音通话认证-->
     <view class="lianjie">
     <image src="/images/ident/talk.png"></image>
     <text>认证官语音通话认证</text>
     </view>
+    </view>
+    <!--查看已认证书目-->
+    <view class="item4">
+    
+    <view class="biaoti2"><text class='renzhengbutton' bindtap="f0">查看已认证书目</text></view>
     </view>
 </view>
