@@ -12,9 +12,9 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
-	"appid": "wx415232c9098b43e1",
-	"projectname": "miniprogram-test",
+	"libVersion": "2.2.3",
+	"appid": "wx0279e49bc6504436",
+	"projectname": "MinBankBank",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -59,6 +59,27 @@
 					"id": -1,
 					"name": "性别定制",
 					"pathName": "pages/booklist/dingzhi/FirstDz/FirstDz",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "推荐",
+					"pathName": "pages/booklist/tuijian/tuijian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ident/enter/enter",
+					"pathName": "pages/ident/enter/enter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社区",
+					"pathName": "pages/socialarea/socialarea",
 					"scene": null
 				}
 			]

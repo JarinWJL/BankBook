@@ -1,6 +1,17 @@
 //app.js
 App({
   onLaunch: function () {
+    //部署云开发环境
+    if (!wx.cloud) {
+      console.error('请使用 2.2.3 或以上的基础库以使用云能力')
+    } else {
+      //接入控制台开发环境
+      wx.cloud.init({
+        env: 'dev-raogj',//环境配置
+        traceUser: true,
+      })
+    }
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
